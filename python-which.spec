@@ -30,19 +30,19 @@ which.py is a small which replacement. It has the following features:
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+rm -rf %{buildroot}
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 # add a script that calls the python module
 cat << \EOF > which-python
 #!/bin/sh
 python -m which $@
 EOF
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
-install -m0755 -p which-python $RPM_BUILD_ROOT%{_bindir}
+mkdir -p %{buildroot}%{_bindir}
+install -m0755 -p which-python %{buildroot}%{_bindir}
 
  
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 
 %files
