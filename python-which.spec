@@ -7,7 +7,7 @@ License:	MIT
 Url:		http://trentm.com/projects/which/
 Source0:	http://trentm.com/downloads/which/%{version}/which-%{version}.zip
 BuildArch:	noarch
-%py_requires -d
+BuildRequires:  python-devel
 
 %description
 which.py is a small which replacement. It has the following features:
