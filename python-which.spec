@@ -1,6 +1,6 @@
 Name:           python-which
 Version:        1.1.0
-Release:        %mkrel 7
+Release:        8
 Summary:        Small which replacement that can be used as a Python module
 
 Group:          Development/Python
