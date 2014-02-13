@@ -10,7 +10,7 @@ Source0:        http://trentm.com/downloads/which/%{version}/which-%{version}.zi
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
-%py_requires -d
+BuildRequires:  python-devel
 
 %description
 which.py is a small which replacement. It has the following features:
