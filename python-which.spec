@@ -24,11 +24,11 @@ which.py is a small which replacement. It has the following features:
 
 
 %build
-%{__python} setup.py build
+python setup.py build
 
 
 %install
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+python setup.py install -O1 --skip-build --root %{buildroot}
 # add a script that calls the python module
 cat << \EOF > which-python
 #!/bin/sh
