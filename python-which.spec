@@ -40,6 +40,6 @@ install -m0755 -p which-python %{buildroot}%{_bindir}
 %files
 %doc LICENSE.txt README.txt TODO.txt
 %{_bindir}/which-python
-%{python_sitelib}/which.py*
-%{python_sitelib}/which-*.egg-info
+%{python2_sitelib}/which.py*
+%{python2_sitelib}/which-*.egg-info
 
