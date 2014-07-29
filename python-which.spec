@@ -1,7 +1,9 @@
+%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
+
 Summary:	Small which replacement that can be used as a Python module
 Name:		python-which
 Version:	1.1.0
-Release:	13
+Release:	14
 Group:		Development/Python
 License:	MIT
 Url:		http://trentm.com/projects/which/
