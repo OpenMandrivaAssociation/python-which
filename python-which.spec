@@ -1,4 +1,4 @@
-
+# no python3 build for this.Sflo
 
 Summary:	Small which replacement that can be used as a Python module
 Name:		python-which
@@ -10,6 +10,8 @@ Url:		http://trentm.com/projects/which/
 Source0:	http://trentm.com/downloads/which/%{version}/which-%{version}.zip
 BuildArch:	noarch
 BuildRequires:  python2-devel
+Provides:     python2-which
+Requires:     python(abi) = 2.7
 
 %description
 which.py is a small which replacement. It has the following features:
