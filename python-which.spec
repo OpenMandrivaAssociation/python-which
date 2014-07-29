@@ -1,4 +1,4 @@
-%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
+
 
 Summary:	Small which replacement that can be used as a Python module
 Name:		python-which
@@ -9,7 +9,7 @@ License:	MIT
 Url:		http://trentm.com/projects/which/
 Source0:	http://trentm.com/downloads/which/%{version}/which-%{version}.zip
 BuildArch:	noarch
-BuildRequires:  python-devel
+BuildRequires:  python2-devel
 
 %description
 which.py is a small which replacement. It has the following features:
@@ -24,15 +24,15 @@ which.py is a small which replacement. It has the following features:
 
 
 %build
-python setup.py build
+python2 setup.py build
 
 
 %install
-python setup.py install -O1 --skip-build --root %{buildroot}
+python2 setup.py install -O1 --skip-build --root %{buildroot}
 # add a script that calls the python module
 cat << \EOF > which-python
 #!/bin/sh
-python -m which $@
+python2 -m which $@
 EOF
 mkdir -p %{buildroot}%{_bindir}
 install -m0755 -p which-python %{buildroot}%{_bindir}
