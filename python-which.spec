@@ -3,7 +3,7 @@
 Summary:	Small which replacement that can be used as a Python module
 Name:		python-which
 Version:	1.1.0
-Release:	17
+Release:	18
 Group:		Development/Python
 License:	MIT
 Url:		http://trentm.com/projects/which/
