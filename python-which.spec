@@ -6,7 +6,7 @@ Version:	1.1.0
 Release:	19
 Group:		Development/Python
 License:	MIT
-Url:		http://trentm.com/projects/which/
+Url:		https://trentm.com/projects/which/
 Source0:	http://trentm.com/downloads/which/%{version}/which-%{version}.zip
 BuildArch:	noarch
 BuildRequires:  python2-devel
